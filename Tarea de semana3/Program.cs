@@ -25,4 +25,5 @@
 catch (Exception ex)
 {
     Console.WriteLine("No ingresaste un valor numerico");
+    Console.WriteLine("Vuelve a intentar");
 }
