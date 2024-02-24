@@ -80,34 +80,58 @@
 //}
 
 //EJERCICIO 4
+//try
+//{
+//    string[] user = { "Emmanuel", "Jose", "Rodriguez" };
+//    string[] pass = { "2005", "2006", "2004" };
+
+//    Console.Write("Ingrese su usuario: ");
+//    string userI = Console.ReadLine();
+
+//    Console.Write("Ingrese la contraseña: ");
+//    string passI = Console.ReadLine();
+
+//    if (ValidarCredenciales(userI, passI, user, pass))
+//        Console.WriteLine("Usario y Contraseñas correctas. Acceso Concedido.");
+
+//    else
+//        Console.WriteLine("Usuario o Contraseñas incorrectas. Acceso Denegado.");
+
+//    static bool ValidarCredenciales(string userI, string passI, string[] user, string[] pass)
+//    {
+//        for (int i = 0; i < user.Length; i++)
+//        {
+//            if (user[i] == userI && pass[i] == passI)
+//            {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+//}
+//catch (Exception ex)
+//{ Console.WriteLine("Parece que ha ingresado caracteres invalidos en su usuario o contraseña."); }
+
+//EJERCICIO 5
+
 try
 {
-    string[] user = { "Emmanuel", "Jose", "Rodriguez" };
-    string[] pass = { "2005", "2006", "2004" };
+    Console.WriteLine("Programa para ver si el numero es par o impar");
+    Console.WriteLine("Ingrese el numero");
+    int num1 = Convert.ToInt32(Console.ReadLine());
 
-    Console.Write("Ingrese su usuario: ");
-    string userI = Console.ReadLine();
-
-    Console.Write("Ingrese la contraseña: ");
-    string passI = Console.ReadLine();
-
-    if (ValidarCredenciales(userI, passI, user, pass))
-        Console.WriteLine("Usario y Contraseñas correctas. Acceso Concedido.");
-
-    else
-        Console.WriteLine("Usuario o Contraseñas incorrectas. Acceso Denegado.");
-
-    static bool ValidarCredenciales(string userI, string passI, string[] user, string[] pass)
+    if (num1 % 2 == 0 )
     {
-        for (int i = 0; i < user.Length; i++)
-        {
-            if (user[i] == userI && pass[i] == passI)
-            {
-                return true;
-            }
-        }
-        return false;
+        Console.WriteLine("El numero ingresado es par");
+
+    }
+    else
+    {
+        Console.WriteLine("El numero ingresado es impar");
     }
 }
 catch (Exception ex)
-{ Console.WriteLine("Parece que ha ingresado caracteres invalidos en su usuario o contraseña."); }
+{
+    Console.WriteLine("Ha ingresado un valor invalido");
+}
+
