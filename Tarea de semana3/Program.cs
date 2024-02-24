@@ -51,30 +51,63 @@
 //    }
 
 //EJERCICIO 3
+//try
+//{
+
+//    Console.WriteLine("Bienvenido a descuentos");
+//    Console.WriteLine("Agregue el precio del producto");
+//    double precio = double.Parse(Console.ReadLine());
+
+//    if (precio > 100)
+//    {
+//        Console.WriteLine("Si aplica al descuento");
+//        double descuen = precio / 10;
+//        double liquido = precio - descuen;
+
+//        Console.WriteLine("Se aplico un descuento del 10% ");
+//        Console.WriteLine("Su total a pagar es de: " + liquido);
+//    }
+//    else
+//    {
+//        Console.WriteLine("No aplicas para el descuento");
+
+//    }
+
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine("No ingresaste un valor valido (SOLO NUMEROS)");
+//}
+
+//EJERCICIO 4
 try
 {
+    string[] user = { "Emmanuel", "Jose", "Rodriguez" };
+    string[] pass = { "2005", "2006", "2004" };
 
-    Console.WriteLine("Bienvenido a descuentos");
-    Console.WriteLine("Agregue el precio del producto");
-    double precio = double.Parse(Console.ReadLine());
+    Console.Write("Ingrese su usuario: ");
+    string userI = Console.ReadLine();
 
-    if (precio > 100)
-    {
-        Console.WriteLine("Si aplica al descuento");
-        double descuen = precio / 10;
-        double liquido = precio - descuen;
+    Console.Write("Ingrese la contraseña: ");
+    string passI = Console.ReadLine();
 
-        Console.WriteLine("Se aplico un descuento del 10% ");
-        Console.WriteLine("Su total a pagar es de: " + liquido);
-    }
+    if (ValidarCredenciales(userI, passI, user, pass))
+        Console.WriteLine("Usario y Contraseñas correctas. Acceso Concedido.");
+
     else
+        Console.WriteLine("Usuario o Contraseñas incorrectas. Acceso Denegado.");
+
+    static bool ValidarCredenciales(string userI, string passI, string[] user, string[] pass)
     {
-        Console.WriteLine("No aplicas para el descuento");
-
+        for (int i = 0; i < user.Length; i++)
+        {
+            if (user[i] == userI && pass[i] == passI)
+            {
+                return true;
+            }
+        }
+        return false;
     }
-
 }
 catch (Exception ex)
-{
-    Console.WriteLine("No ingresaste un valor valido (SOLO NUMEROS)");
-}
+{ Console.WriteLine("Parece que ha ingresado caracteres invalidos en su usuario o contraseña."); }
