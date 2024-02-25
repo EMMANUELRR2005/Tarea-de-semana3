@@ -114,24 +114,51 @@
 
 //EJERCICIO 5
 
-try
-{
-    Console.WriteLine("Programa para ver si el numero es par o impar");
-    Console.WriteLine("Ingrese el numero");
-    int num1 = Convert.ToInt32(Console.ReadLine());
+//try
+//{
+//    Console.WriteLine("Programa para ver si el numero es par o impar");
+//    Console.WriteLine("Ingrese el numero");
+//    int num1 = Convert.ToInt32(Console.ReadLine());
 
-    if (num1 % 2 == 0 )
+//    if (num1 % 2 == 0 )
+//    {
+//        Console.WriteLine("El numero ingresado es par");
+
+//    }
+//    else
+//    {
+//        Console.WriteLine("El numero ingresado es impar");
+//    }
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine("Ha ingresado un valor invalido");
+//}
+
+// EJERCICIO 6
+try
+{ 
+    Console.WriteLine("Bienvenido al banco");
+    Console.WriteLine("Para acceder al prestamo llene esta informacion ");
+
+    Console.WriteLine("Coloque su edad");
+    int edad = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Ahora ingrese el monto del prestamo");
+    float monto = Convert.ToInt32(Console.ReadLine());
+
+    if (monto < 5000 || edad > 60)
     {
-        Console.WriteLine("El numero ingresado es par");
+        Console.WriteLine("Felicidades se ha aprobado su prestamo");
 
     }
     else
     {
-        Console.WriteLine("El numero ingresado es impar");
+        Console.WriteLine("su prestamo ha sido rechazado");
     }
+
 }
 catch (Exception ex)
 {
-    Console.WriteLine("Ha ingresado un valor invalido");
+    Console.WriteLine("Ha ingresado valores equivocados");
 }
-
