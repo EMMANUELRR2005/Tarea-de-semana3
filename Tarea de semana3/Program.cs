@@ -201,34 +201,66 @@
 //}
 //EJERCICIOS USANDO SWITCH 
 //EJERCICIO 1
-Console.WriteLine("Ingrese un numero del 1 al 5 en letras");
-string num = Console.ReadLine();
-int num1;
+//Console.WriteLine("Ingrese un numero del 1 al 5 en letras");
+//string num = Console.ReadLine();
+//int num1;
+
+//switch (num)
+//{
+//    case "uno":
+//        num1 = 1;
+//        Console.WriteLine(num1);
+//        break;
+//    case "dos":
+//        num1 = 2;
+//        Console.WriteLine(num1);
+//        break;
+//    case "tres":
+//        num1 = 3;
+//        Console.WriteLine(num1);
+//        break;
+//    case "cuatro":
+//        num1 = 4;
+//        Console.WriteLine(num1);
+//        break;
+//    case "cinco":
+//        num1 = 5;
+//        Console.WriteLine(num1);
+//        break;
+//    default:
+//        Console.WriteLine("Ha escrito un numero que no se le indico ");
+//        break;
+//}
+//EJERCICIO 2 USANDO SWITCH
+Console.WriteLine("Ingrese un numero del 1 al 7");
+int num = Convert.ToInt32(Console.ReadLine());
 
 switch (num)
 {
-    case "uno":
-        num1 = 1;
-        Console.WriteLine(num1);
+    case 1:
+        Console.WriteLine("Lunes");
         break;
-    case "dos":
-        num1 = 2;
-        Console.WriteLine(num1);
+    case 2:
+        Console.WriteLine("Martes");
         break;
-    case "tres":
-        num1 = 3;
-        Console.WriteLine(num1);
+    case 3:
+        Console.WriteLine("Miercoles");
         break;
-    case "cuatro":
-        num1 = 4;
-        Console.WriteLine(num1);
+    case 4:
+        Console.WriteLine("Jueves");
         break;
-    case "cinco":
-        num1 = 5;
-        Console.WriteLine(num1);
+    case 5:
+        Console.WriteLine("Viernes");
+        break;
+    case 6:
+        Console.WriteLine("Sabado");
+        break;
+    case 7:
+        Console.WriteLine("Domingo");
         break;
     default:
-        Console.WriteLine("Ha escrito un numero que no se le indico ");
+        Console.WriteLine("Ingreso un numero no valido ");
         break;
-}
+} 
+
 
