@@ -263,19 +263,34 @@
 //        break;
 //} 
 //EJERCICIO 3 USANDO SWITCH
-Console.WriteLine("servicio de taller Emmanuel");
-Console.WriteLine("Seleccione el numero del servicio usado \n1 Lavado de auto. \n2.Cambio de aceite. \n3.Revision mecanica.");
+//Console.WriteLine("servicio de taller Emmanuel");
+//Console.WriteLine("Seleccione el numero del servicio usado \n1 Lavado de auto. \n2.Cambio de aceite. \n3.Revision mecanica.");
+//int num = Convert.ToInt32(Console.ReadLine());
+
+//switch (num)
+//{
+//    case 1: Console.WriteLine("El monto a pagar es de Q.30.00");
+//        break;
+//    case 2: Console.WriteLine("El monto a pagar es de Q.150.00");
+//        break;
+//    case 3: Console.WriteLine("El monto a pagar es de Q.300.00");
+//        break;
+//    default: Console.WriteLine("Ingreso un valor no valido");
+//        break;
+//}
+//EJERCICIO 4 USANDO SWITCH
+Console.WriteLine("Seleccione el numero del idioma que es de su preferencia \n1 Español. \n2.Ingles. \n3.Frances.");
 int num = Convert.ToInt32(Console.ReadLine());
 
 switch (num)
 {
-    case 1: Console.WriteLine("El monto a pagar es de Q.30.00");
+    case 1: Console.WriteLine("Bienvenido");
         break;
-    case 2: Console.WriteLine("El monto a pagar es de Q.150.00");
+    case 2: Console.WriteLine("welcome!");
         break;
-    case 3: Console.WriteLine("El monto a pagar es de Q.300.00");
+    case 3: Console.WriteLine("bienvenue");
         break;
-    default: Console.WriteLine("Ingreso un valor no valido");
+    default: Console.WriteLine("Selecciono un numero invalido");
         break;
-}
+}   
 
