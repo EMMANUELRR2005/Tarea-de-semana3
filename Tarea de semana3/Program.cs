@@ -232,35 +232,50 @@
 //        break;
 //}
 //EJERCICIO 2 USANDO SWITCH
-Console.WriteLine("Ingrese un numero del 1 al 7");
+//Console.WriteLine("Ingrese un numero del 1 al 7");
+//int num = Convert.ToInt32(Console.ReadLine());
+
+//switch (num)
+//{
+//    case 1:
+//        Console.WriteLine("Lunes");
+//        break;
+//    case 2:
+//        Console.WriteLine("Martes");
+//        break;
+//    case 3:
+//        Console.WriteLine("Miercoles");
+//        break;
+//    case 4:
+//        Console.WriteLine("Jueves");
+//        break;
+//    case 5:
+//        Console.WriteLine("Viernes");
+//        break;
+//    case 6:
+//        Console.WriteLine("Sabado");
+//        break;
+//    case 7:
+//        Console.WriteLine("Domingo");
+//        break;
+//    default:
+//        Console.WriteLine("Ingreso un numero no valido ");
+//        break;
+//} 
+//EJERCICIO 3 USANDO SWITCH
+Console.WriteLine("servicio de taller Emmanuel");
+Console.WriteLine("Seleccione el numero del servicio usado \n1 Lavado de auto. \n2.Cambio de aceite. \n3.Revision mecanica.");
 int num = Convert.ToInt32(Console.ReadLine());
 
 switch (num)
 {
-    case 1:
-        Console.WriteLine("Lunes");
+    case 1: Console.WriteLine("El monto a pagar es de Q.30.00");
         break;
-    case 2:
-        Console.WriteLine("Martes");
+    case 2: Console.WriteLine("El monto a pagar es de Q.150.00");
         break;
-    case 3:
-        Console.WriteLine("Miercoles");
+    case 3: Console.WriteLine("El monto a pagar es de Q.300.00");
         break;
-    case 4:
-        Console.WriteLine("Jueves");
+    default: Console.WriteLine("Ingreso un valor no valido");
         break;
-    case 5:
-        Console.WriteLine("Viernes");
-        break;
-    case 6:
-        Console.WriteLine("Sabado");
-        break;
-    case 7:
-        Console.WriteLine("Domingo");
-        break;
-    default:
-        Console.WriteLine("Ingreso un numero no valido ");
-        break;
-} 
-
+}
 
