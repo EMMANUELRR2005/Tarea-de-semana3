@@ -163,39 +163,72 @@
 //    Console.WriteLine("Ha ingresado valores equivocados");
 //}
 //EJERCICIO 7
-try
+//try
+//{
+//    Console.WriteLine("Seleccione el numero de la figura que desea calcular: \n1.Triángulo. \n2.Cuadrado. \n3.Circulo. ");
+//    int op7 = int.Parse(Console.ReadLine());
+
+//    switch (op7)
+//    {
+//        case 1:
+//            Console.WriteLine("Ingrese la base del triangulo: ");
+//            double bt = Convert.ToDouble(Console.ReadLine());
+//            Console.WriteLine("Ingrese la altura del triangulo: ");
+//            double at = Convert.ToDouble(Console.ReadLine());
+
+//            double art = (bt * at) / 2;
+//            Console.WriteLine("El area del triangulo es de: " + art);
+//            break;
+//        case 2:
+//            Console.WriteLine("Ingrese el largo de los lados del cuadrado: ");
+//            double cl = Convert.ToDouble(Console.ReadLine());
+
+//            double arc = cl * cl;
+//            Console.WriteLine("El area del cuadrado es de: " + arc);
+//            break;
+//        case 3:
+//            Console.WriteLine("Ingrese el radio del circulo: ");
+//            double rc = Convert.ToDouble(Console.ReadLine());
+
+//            double ac = Math.PI * Math.Pow(rc, 2);
+//            Console.WriteLine("El area del circulo es de: " + rc);
+//            break;
+//    }
+//}
+//catch (Exception ex)
+//{ 
+//    Console.WriteLine("Ha ingresado un valor invalido, vuelva a intentar "); 
+//}
+//EJERCICIOS USANDO SWITCH 
+//EJERCICIO 1
+Console.WriteLine("Ingrese un numero del 1 al 5 en letras");
+string num = Console.ReadLine();
+int num1;
+
+switch (num)
 {
-    Console.WriteLine("Seleccione el numero de la figura que desea calcular: \n1.Triángulo. \n2.Cuadrado. \n3.Circulo. ");
-    int op7 = int.Parse(Console.ReadLine());
-
-    switch (op7)
-    {
-        case 1:
-            Console.WriteLine("Ingrese la base del triangulo: ");
-            double bt = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese la altura del triangulo: ");
-            double at = Convert.ToDouble(Console.ReadLine());
-
-            double art = (bt * at) / 2;
-            Console.WriteLine("El area del triangulo es de: " + art);
-            break;
-        case 2:
-            Console.WriteLine("Ingrese el largo de los lados del cuadrado: ");
-            double cl = Convert.ToDouble(Console.ReadLine());
-
-            double arc = cl * cl;
-            Console.WriteLine("El area del cuadrado es de: " + arc);
-            break;
-        case 3:
-            Console.WriteLine("Ingrese el radio del circulo: ");
-            double rc = Convert.ToDouble(Console.ReadLine());
-
-            double ac = Math.PI * Math.Pow(rc, 2);
-            Console.WriteLine("El area del circulo es de: " + rc);
-            break;
-    }
+    case "uno":
+        num1 = 1;
+        Console.WriteLine(num1);
+        break;
+    case "dos":
+        num1 = 2;
+        Console.WriteLine(num1);
+        break;
+    case "tres":
+        num1 = 3;
+        Console.WriteLine(num1);
+        break;
+    case "cuatro":
+        num1 = 4;
+        Console.WriteLine(num1);
+        break;
+    case "cinco":
+        num1 = 5;
+        Console.WriteLine(num1);
+        break;
+    default:
+        Console.WriteLine("Ha escrito un numero que no se le indico ");
+        break;
 }
-catch (Exception ex)
-{ 
-    Console.WriteLine("Ha ingresado un valor invalido, vuelva a intentar "); 
-}
+
