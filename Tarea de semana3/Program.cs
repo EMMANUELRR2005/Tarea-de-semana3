@@ -136,29 +136,66 @@
 //}
 
 // EJERCICIO 6
+//try
+//{ 
+//    Console.WriteLine("Bienvenido al banco");
+//    Console.WriteLine("Para acceder al prestamo llene esta informacion ");
+
+//    Console.WriteLine("Coloque su edad");
+//    int edad = int.Parse(Console.ReadLine());
+
+//    Console.WriteLine("Ahora ingrese el monto del prestamo");
+//    float monto = Convert.ToInt32(Console.ReadLine());
+
+//    if (monto < 5000 || edad > 60)
+//    {
+//        Console.WriteLine("Felicidades se ha aprobado su prestamo");
+
+//    }
+//    else
+//    {
+//        Console.WriteLine("su prestamo ha sido rechazado");
+//    }
+
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine("Ha ingresado valores equivocados");
+//}
+//EJERCICIO 7
 try
-{ 
-    Console.WriteLine("Bienvenido al banco");
-    Console.WriteLine("Para acceder al prestamo llene esta informacion ");
+{
+    Console.WriteLine("Seleccione el numero de la figura que desea calcular: \n1.Triángulo. \n2.Cuadrado. \n3.Circulo. ");
+    int op7 = int.Parse(Console.ReadLine());
 
-    Console.WriteLine("Coloque su edad");
-    int edad = int.Parse(Console.ReadLine());
-
-    Console.WriteLine("Ahora ingrese el monto del prestamo");
-    float monto = Convert.ToInt32(Console.ReadLine());
-
-    if (monto < 5000 || edad > 60)
+    switch (op7)
     {
-        Console.WriteLine("Felicidades se ha aprobado su prestamo");
+        case 1:
+            Console.WriteLine("Ingrese la base del triangulo: ");
+            double bt = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese la altura del triangulo: ");
+            double at = Convert.ToDouble(Console.ReadLine());
 
-    }
-    else
-    {
-        Console.WriteLine("su prestamo ha sido rechazado");
-    }
+            double art = (bt * at) / 2;
+            Console.WriteLine("El area del triangulo es de: " + art);
+            break;
+        case 2:
+            Console.WriteLine("Ingrese el largo de los lados del cuadrado: ");
+            double cl = Convert.ToDouble(Console.ReadLine());
 
+            double arc = cl * cl;
+            Console.WriteLine("El area del cuadrado es de: " + arc);
+            break;
+        case 3:
+            Console.WriteLine("Ingrese el radio del circulo: ");
+            double rc = Convert.ToDouble(Console.ReadLine());
+
+            double ac = Math.PI * Math.Pow(rc, 2);
+            Console.WriteLine("El area del circulo es de: " + rc);
+            break;
+    }
 }
 catch (Exception ex)
-{
-    Console.WriteLine("Ha ingresado valores equivocados");
+{ 
+    Console.WriteLine("Ha ingresado un valor invalido, vuelva a intentar "); 
 }
