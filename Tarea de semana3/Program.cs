@@ -279,18 +279,36 @@
 //        break;
 //}
 //EJERCICIO 4 USANDO SWITCH
-Console.WriteLine("Seleccione el numero del idioma que es de su preferencia \n1 Español. \n2.Ingles. \n3.Frances.");
-int num = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Seleccione el numero del idioma que es de su preferencia \n1 Español. \n2.Ingles. \n3.Frances.");
+//int num = Convert.ToInt32(Console.ReadLine());
 
-switch (num)
+//switch (num)
+//{
+//    case 1: Console.WriteLine("Bienvenido");
+//        break;
+//    case 2: Console.WriteLine("welcome!");
+//        break;
+//    case 3: Console.WriteLine("bienvenue");
+//        break;
+//    default: Console.WriteLine("Selecciono un numero invalido");
+//        break;
+//}   
+//EJERCICIO 5 USANDO SWITCH
+Console.WriteLine("Bienvenido para saber tu desempeño tienes que colocar tu calificacion del examen");
+double exam = Convert.ToDouble(Console.ReadLine());
+
+switch (exam)
 {
-    case 1: Console.WriteLine("Bienvenido");
+    case double e when (e >= 90 && e <= 100):
+        Console.WriteLine("Su nota es Sobresaliente.");
         break;
-    case 2: Console.WriteLine("welcome!");
+    case double e when (e >= 80 && e <= 89):
+        Console.WriteLine("Su nota es Notable.");
         break;
-    case 3: Console.WriteLine("bienvenue");
+    case double e when (e >= 61 && e <= 79):
+        Console.WriteLine("Su nota es Aprovatoria.");
         break;
-    default: Console.WriteLine("Selecciono un numero invalido");
+    case double e when (e <= 60):
+        Console.WriteLine("Su nota es insuficiente.");
         break;
-}   
-
+}
